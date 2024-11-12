@@ -8,7 +8,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.2.2'
+        classpath 'com.android.tools.build:gradle:4.1.0'
     }
 }
 
@@ -22,10 +22,11 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    namespace 'com.app.scheme'
-    compileSdkVersion 32
+    namespace "com.babybear.appscheme"
+    compileSdkVersion 34
 
     defaultConfig {
+        targetSdkVersion 34 // 34로 설정
         minSdkVersion 21
     }
 }
